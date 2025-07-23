@@ -28,9 +28,9 @@ cart.forEach((cartItem) => {
                 <div class="product-name">
                   ${matchingProduct.name}
                 </div>
-                <div class="product-price">${
+                <div class="product-price">$${(
                   matchingProduct.priceCents / 100
-                }</div>
+                ).toFixed(2)}</div>
                 <div class="product-quantity">
                   <span> Quantity: <span class="quantity-label">${
                     cart.quantity
